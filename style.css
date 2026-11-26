@@ -116,3 +116,12 @@ ol.howto code{font-family:var(--mono);font-size:13px;background:var(--mark);colo
 .ex-head h2{margin:4px 0 0;font-family:var(--display);font-weight:400;font-size:24px}
 .example details summary{cursor:pointer;font-weight:700}
 .ex-lyrics{white-space:pre-wrap;word-break:break-word;font-family:var(--body);font-size:14px;margin:8px 0 0;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:12px}
+
+/* 저작권 안내 */
+.rights{border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--paper)}
+.rights h3{margin:0 0 6px;font-size:15px}
+.rights ul{margin:0 0 6px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:4px}
+.rights li{padding-left:24px;position:relative}
+.rights li::before{content:"•";position:absolute;left:8px;color:var(--muted)}
+.rights li.ok::before{content:"⭕";left:0;font-size:12px;top:2px}
+.rights li.no::before{content:"❌";left:0;font-size:12px;top:2px}
